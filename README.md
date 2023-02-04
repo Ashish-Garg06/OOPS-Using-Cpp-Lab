@@ -1,7 +1,7 @@
 # OOPS-Using-Cpp-Lab
 Contains all the lab files and practical done by me in OOPS with c++ lab.
 
-This repository contains the C++ files for the Object-Oriented Programming (OOP) course, including the exercises and assignments that have been taught or assigned by the instructor. The purpose of this repository is to provide students with a centralized location to access and review the code we have written and will write during the course.
+This repository contains the C++ files for the Object-Oriented Programming (OOP) course, including the exercises and assignments that have been taught or assigned by the Sir. The purpose of this repository is to provide all students with a centralized location to access and review the code we have written and will write during the course.
 
 ### Requirements
 
