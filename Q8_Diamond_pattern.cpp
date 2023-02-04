@@ -1,12 +1,19 @@
 #include <iostream>
 using namespace std;
-
+// function Prototype
+void pattern_diamond_generator(int n);
 int main()
 {
     int n;
     cout << "Enter the number of rows in first half: ";
     cin >> n;
-
+    
+    // calling function
+    pattern_diamond_generator(n);
+    return 0;
+}
+void pattern_diamond_generator(int n)
+{
     // The first loop generates the upper half of the diamond
     // The loop variable i is used to determine the number of stars in each row, which is equal to i itself
     for (int i = 1; i <= n; i++)
@@ -29,7 +36,7 @@ int main()
 
     // The second loop generates the lower half of the diamond
     // works same like the first loop but uses decrement operator instead
-    for (int i = n - 1; i >= 1; i--)
+    for (int i = n; i >= 1; i--)
     {
         for (int j = n - i; j >= 1; j--)
         {
@@ -42,6 +49,4 @@ int main()
         }
         cout << endl;
     }
-
-    return 0;
 }

@@ -1,12 +1,20 @@
 #include <iostream>
 using namespace std;
-
+// function Prototype
+void pattern_hollow_square_generator(int n);
 int main()
 {
     int n;
     cout << "Enter the side length of the square: ";
     cin >> n;
 
+    // calling function
+    pattern_hollow_square_generator(n);
+
+    return 0;
+}
+void pattern_hollow_square_generator(int n)
+{
     // Print the top row
     // loop runs for n times to print stars n time in top row
     for (int i = 0; i < n; i++)
@@ -29,7 +37,8 @@ int main()
             // for printing spaces in the middle columns
             cout << "  ";
         }
-        cout << "*" <<"\n";
+        cout << "*"
+             << "\n";
     }
 
     // Print the bottom row
@@ -38,7 +47,5 @@ int main()
     {
         cout << "* ";
     }
-    cout <<"\n";
-
-    return 0;
+    cout << "\n";
 }

@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
-
+// function Prototype
+void pattern_reverse_a_ab_abc_generator(int n, char c);
 int main()
 {
     int n;
@@ -12,9 +13,14 @@ int main()
     cout << "Enter the character to start the pattern with : ";
     cin >> c;
 
-    cout << "Be Warned!! High values of n combined with High initial value of char will give garbage response \nThis is due to the ascii_val chart values and not due to any fault in the code \nBasically GIGO(Garbage in Garbage out) problem \n";
+    cout << "Be Warned!! High values of n combined with High initial value of char will give garbage response \nThis is due to the ascii chart config and not due to any fault in the code \nBasically GIGO(Garbage in Garbage out) problem \n";
+    // calling function
+    pattern_reverse_a_ab_abc_generator(n, c);
+    return 0;
+}
 
-
+void pattern_reverse_a_ab_abc_generator(int n, char c)
+{
     //  This loop will run n times, where n is the number of lines to print
     for (int i = 1; i <= n; i++)
     {
@@ -39,6 +45,4 @@ int main()
         //  Move to a new line after each line is printed
         cout << "\n";
     }
-
-    return 0;
 }
