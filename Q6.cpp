@@ -20,6 +20,7 @@ int main()
     {
         //  This variable ascii_val will be used to print the letter through the loop
         // int() is used as a function to extract the ascii value from the char c
+        // its placement inside the first line of outer loop ensures that it is initialised each iteration
         int ascii_val = int(c);
 
         //  This loop will run n times for first line
