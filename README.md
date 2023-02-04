@@ -12,7 +12,7 @@ This repository contains the C++ files for the Object-Oriented Programming (OOP)
 - simply copy paste the code in vs code 
 
 OR
-- go to green <code> button
+- go to code button on top right (its the green one)
 - Clone or download the repository zip file to your local machine.
 - Open the files in your preferred text editor or IDE.
 - Compile and run the code.
