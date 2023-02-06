@@ -24,7 +24,7 @@ void pattern_hollow_square_generator(int n)
     cout << "\n";
 
     // Print the middle rows
-    // loops runs for n-2 times
+    // this inner loop will runs for n-2 times
     // this is because top and bottom row use different logic to print stars
     // top + bottom =2 rows hence the loop runs for n-2 times
     for (int i = 0; i < n - 2; i++)
