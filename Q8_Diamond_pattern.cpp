@@ -5,7 +5,7 @@ void pattern_diamond_generator(int n);
 int main()
 {
     int n;
-    cout << "Enter the number of rows in first half: ";
+    cout << "Enter the number of rows in first half of the diamond: ";
     cin >> n;
     
     // calling function
