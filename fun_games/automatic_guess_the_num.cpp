@@ -61,7 +61,7 @@ void num_guess_binary_search(long long range_low,long long range_high,long long 
 int main()
 {
     cout << "Welcome to the Guess the Number game!\n";
-    cout << "Think of a number between 1 and 10^17.\nEnter the no :";
+    cout << "Think of a number between 1 and 10^18.\nEnter the no :";
 
     long long reply;
     cin>>reply;
