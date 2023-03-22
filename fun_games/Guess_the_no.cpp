@@ -16,7 +16,7 @@ void num_guess_binary_search(int range_low,int range_high,int num_attempts=0)
         // Make a guess
         guess = mid;
         attempts++;
-
+        
         // Ask the user for feedback
         char response;
         cout << "Is the number " << guess << "? (y/n): ";
