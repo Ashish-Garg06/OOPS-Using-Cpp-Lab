@@ -19,6 +19,7 @@ public:
     }
     // Declare friend function
     friend int max(A, B);
+    friend int mean(A, B);
 };
 
 // Declare class B
@@ -36,29 +37,35 @@ public:
     }
     // Declare friend function
     friend int max(A, B);
+    friend int mean(A, B);
 };
 
 // Define friend function
 int max(A objA, B objB)
 {
-    if (objA.numA==objB.numB)
+    if (objA.numA == objB.numB)
     {
-        cout<<"Both are equal"<<endl;
+        cout << "Both are equal" << endl;
     }
     else
     {
-        cout<< ((objA.numA > objB.numB) ? objA.numA : objB.numB)<<" is greater !!";
-
+        cout << ((objA.numA > objB.numB) ? objA.numA : objB.numB) << " is greater !! \n";
     }
+}
+
+int mean(A objA, B objB)
+{
+    return ((objA.numA+objB.numB)/2);
 }
 
 // Main function
 int main()
 {
-    A objA;
-    B objB;
-    objA.getNumA();
-    objB.getNumB();
-    max(objA, objB);
+    A obj1;
+    B obj2;
+    obj1.getNumA();
+    obj2.getNumB();
+    max(obj1, obj2);
+    cout<<"Mean is "<<mean(obj1,obj2)<<endl;
     return 0;
 }
