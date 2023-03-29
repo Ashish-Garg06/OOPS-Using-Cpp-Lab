@@ -7,11 +7,11 @@ private:
     int length, breadth;
 
 public:
-    Rectangle(void);
-    Rectangle(int a, int b);
+    Rectangle(void);         // Default constructor
+    Rectangle(int a, int b); // Parameterized constructor
 
     void getdata(void);
-    void setdata(int a, int b);
+    void setdata(int l, int b);
     int getarea(void);
 };
 
@@ -49,9 +49,9 @@ void Rectangle::getdata(void)
     cout << "breadth : " << breadth << "\n";
 }
 
-void Rectangle::setdata(int a, int b)
+void Rectangle::setdata(int l, int b)
 {
-    length = a;
+    length = l;
     breadth = b;
 }
 
