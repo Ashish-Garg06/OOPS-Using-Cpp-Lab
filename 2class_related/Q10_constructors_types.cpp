@@ -17,14 +17,14 @@ public:
 
 int main()
 {
-    Rectangle obj1;
+    Rectangle obj1; // default constructor called
     obj1.getdata();
-    obj1.setdata(245, 20);
+    obj1.setdata(245, 20); // value set manually
     obj1.getdata();
 
     cout << "area of obj 1 = " << obj1.getarea() << endl;
 
-    Rectangle obj2(30, 25);
+    Rectangle obj2(30, 25); // default constructor called
     obj2.getdata();
     cout << "area of obj 2 = " << obj2.getarea() << endl;
 
