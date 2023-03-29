@@ -24,7 +24,7 @@ int main()
 
     cout << "area of obj 1 = " << obj1.getarea() << endl;
 
-    Rectangle obj2(30, 25); // default constructor called
+    Rectangle obj2(30, 25); // parameterized constructor called
     obj2.getdata();
     cout << "area of obj 2 = " << obj2.getarea() << endl;
 
