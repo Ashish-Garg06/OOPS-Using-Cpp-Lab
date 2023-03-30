@@ -15,7 +15,7 @@ public:
     }
 
     // Deep copy constructor
-    MyClass(const MyClass &obj, bool deep = true)
+    MyClass(const MyClass &obj, bool deep = false)
     {
         if (deep)
         {
@@ -59,15 +59,17 @@ int main()
     obj1.setValue(24);
 
     // Print both objects to demonstrate that they share the same memory
+    cout << "Shallow copy: " << obj1.getValue() << endl;
     cout << "Shallow copy: " << obj2.getValue() << endl;
 
     // Create a deep copy of obj1
-    MyClass obj3(obj1, false);
+    MyClass obj3(obj1, true);
 
     // Modify obj1 again
     obj1.setValue(12);
 
     // Print both objects to demonstrate that they have different memory
+    cout << "Deep copy: " << obj1.getValue() << endl;
     cout << "Deep copy: " << obj3.getValue() << endl;
 
     return 0;
