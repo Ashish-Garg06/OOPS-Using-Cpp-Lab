@@ -35,7 +35,7 @@ public:
     }
 
     // Getter
-    int getValue() const
+    int getValue()
     {
         return *ptr;
     }
