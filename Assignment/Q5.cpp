@@ -45,6 +45,7 @@ public:
     ~Example()
     {
         delete[] data;
+        cout << "\n\n Destroyed ";
     }
 };
 
