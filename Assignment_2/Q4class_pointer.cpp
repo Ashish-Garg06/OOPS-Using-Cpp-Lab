@@ -23,7 +23,7 @@ int main()
     Vehicle car;
     car.set_speed(120);
 
-    // Creating a pointer to class
+    // Creating a pointer to class which will be used
     Vehicle *vehiclePtr;
     // Assigning the address of the 'car' object to the pointer 'vehiclePtr'
     vehiclePtr = &car;
