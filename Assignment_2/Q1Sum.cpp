@@ -34,8 +34,8 @@ public:
 int sum_of_nums(Number objn, Sum objs)
 {
     // Using Guass summation for natural number formula
-    objs.sum = ((objn.num * (objn.num + 1)) / 2);
-    cout << "Sum of natural numbers till n: " << objs.sum << endl;
+    objs.sum = (objn.num * (objn.num + 1) / 2);
+    return objs.sum;
 }
 
 int main()
@@ -43,6 +43,6 @@ int main()
     Number n;
     Sum s;
     n.get_num();
-    sum_of_nums(n, s);
+    cout << "Sum of natural numbers till n: " << sum_of_nums(n, s) << endl;
     return 0;
 }
